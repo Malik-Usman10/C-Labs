@@ -32,9 +32,9 @@ int main()
     // scietificNot();
     // gradeStudents();
     // calculator();
-    traficLight();
+    // traficLight();
     // factorial();
-    // reverseSequence();
+    reverseSequence();
 }
 // Two Input Numbers and Print their Sum
 void sumNumbers()
