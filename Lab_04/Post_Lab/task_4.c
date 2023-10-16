@@ -1,7 +1,6 @@
 #include<stdio.h>
 #include<math.h>
 
-
 int main()
 {
     int userinput;
@@ -17,13 +16,13 @@ int main()
         switch (userinput)
         {
         case 1:
-            int num1 , num2;
+            double num1 , num2;
             printf("You select Addition\n");
             printf("Enter First Number:\n");
-            scanf("%d", &num1);
+            scanf("%lf", &num1);
             printf("Enter Second Number:\n");
-            scanf("%d", &num2);
-            printf("Addition of Two Numbers is: %d\n", num1 + num2);
+            scanf("%lf", &num2);
+            printf("Addition of Two Numbers is: %.2lf\n", num1 + num2);
             break;
         case 2:
             printf("You select Substraction\n");
@@ -72,6 +71,4 @@ int main()
             break;
         }
     }
-    
-
 }

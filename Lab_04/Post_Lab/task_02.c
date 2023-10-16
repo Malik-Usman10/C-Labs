@@ -15,7 +15,4 @@ int main()
         number = number / 10;
     }
     printf("Sum of the Digits are: %d ", sumOfDigits);  
-
-
-
 }
