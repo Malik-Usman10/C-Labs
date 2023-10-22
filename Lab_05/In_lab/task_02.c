@@ -8,15 +8,14 @@ int main(){
     {
         if (integer % i == 0)
         {
-            sum += i;
-            printf("The Sum is %d\n", sum);
+            sum = sum + i;
         }
     }
     if (sum == integer)
     {
         printf("%d is a perfect number", integer);
     }
-    if (sum != integer)
+    else if (sum != integer)
     {
         printf("%d is not a perfect number", integer);
     }
