@@ -3,7 +3,7 @@
 
 int main()
 {
-    int userinput;
+    int userinput = 0;
     while (userinput != 7)
     {
         int selection;

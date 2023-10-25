@@ -13,7 +13,7 @@ int main()
  while (originalNum != 0)
  {
      digit = originalNum % 10;
-     sum = sum + pow(digit,3);
+     sum = sum + digit * digit * digit;
      originalNum /= 10;
  }
  if (sum == number)

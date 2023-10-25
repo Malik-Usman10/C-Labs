@@ -8,15 +8,14 @@ int main() {
     scanf("%d", &b);
     num1 = a;
     num2 = b;
-    if (b > 0) {
-        while (b--) {
+
+    while (b > 0) {
+            b--;
             a++;
-        }
     }
-    else if (b < 0) {
-        while (b++) {
+    while (b < 0) {
+            b++;
             a--;
-        }
     }
     printf("The addition of %d and %d is: %d\n", num1, num2, a);
 }
