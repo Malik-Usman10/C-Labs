@@ -1,1 +1,0 @@
-These are all the Small Projects that i did at the start of my C Programming Journey in the University.
