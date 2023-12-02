@@ -1,3 +1,8 @@
 *.pdf
 *.exe
 .vscode/
+*
+!*.*
+!*/
+*.json
+*.DS_Store
