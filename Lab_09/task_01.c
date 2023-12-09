@@ -20,7 +20,7 @@ bool displayUniqueElements(int arr[], int size)
             printf("%d ", arr[i]);
         }
     } 
-
+    return 0;
 }
 
 int main() {
