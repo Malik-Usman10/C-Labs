@@ -1,7 +1,8 @@
 /*
 Create a program that takes an integer (1-12) as input and uses a switch statement 
 to display the name of the corresponding month (e.g., 1 for January, 2 for February, 
-and so on)*/
+and so on)
+*/
 #include<stdio.h>
 int main()
 {

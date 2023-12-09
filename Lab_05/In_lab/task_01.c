@@ -2,7 +2,7 @@
 int main()
 {
     int largeVal, smallVal, inputTimeVal, temp;
-    printf("Enter the Number of Values (n):");
+    printf("Enter the Number of Values (n): ");
     scanf("%d", &inputTimeVal);
     smallVal = inputTimeVal;
     largeVal = inputTimeVal;

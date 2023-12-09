@@ -4,7 +4,7 @@
 #include <time.h>
 
 int isguessed(int num){
-  int i = 1, guess;
+    int i = 1, guess;
     while (1)
     {
        printf("Enter the guess between 1-100:  ");

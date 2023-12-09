@@ -14,7 +14,6 @@ int main()
             i = i -1;
             averageOfTotal = total / i ;
             printf("The Average of PF Quizz is: %d", averageOfTotal); 
-            return 0;
         }
          total = total + num; 
          i = i + 1;

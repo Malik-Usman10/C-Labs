@@ -19,7 +19,8 @@ bool displayUniqueElements(int arr[], int size)
         {
             printf("%d ", arr[i]);
         }
-    }
+    } 
+
 }
 
 int main() {
@@ -31,5 +32,6 @@ int main() {
         scanf("%d", &arr[i]);
     }
     printf("Unique Elements");
-    bool isUnique = displayUniqueElements(arr, 5);
+    displayUniqueElements(arr, 5);
+    
 }

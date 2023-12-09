@@ -1,4 +1,4 @@
-
+//Reversing a array by making another array
 #include<stdio.h>
 #include <stdbool.h>
 
@@ -15,6 +15,12 @@ int main()
     {
         temp[j] = array[4 - j];
     }
-    printf("%d", temp[j]);
+    
+    for (int i = 0; i < 5; i++)
+    {
+        printf("%d", array[i]);
+    } 
     printf(" \n");
 }
+
+

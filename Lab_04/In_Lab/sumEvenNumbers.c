@@ -6,7 +6,7 @@ question
 #include<stdio.h>
 int main()
 {
-    int sumEven, i;
+    int sumEven = 0, i;
     for (i = 0; i <= 100; i++)
     {
         if (i % 2 == 0)
@@ -15,5 +15,6 @@ int main()
         }
     }
     printf("The Sum of all even number is: %d", sumEven);
-    
 }
+
+
