@@ -10,15 +10,12 @@ int main()
     printf("Enter your age in Years : \t");
     scanf("%d", &age);
 
-    while(age <= 0 )
+    while(age <= 0 || age > 150)
     {
-        printf("Are you comeding me. Enter correct : \t");
+        printf("Please Enter a Correct age : \t");
         scanf("%d", & age);
     }
-    if (age > 120)
-    {
-       printf("You should be in Grave...  \n");
-    }
+    
     int ageMonths = age * 12 ;
     int ageHours = age * 365 * 24 ;
     long long ageMinutes = (long long) age * 365 * 24 * 60 ;
