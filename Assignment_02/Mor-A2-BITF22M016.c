@@ -1,6 +1,4 @@
 // M Usman Kareem     BITF22M016
-
-
 #include <stdio.h>
 #include <string.h>
 
@@ -23,13 +21,12 @@ int taskThreeInitializer();
 int taskFourInitializer();
 void calculateAge(int hours, int minutes);
 
-
 int main()
 {
-        taskOneInitializer();
+        // taskOneInitializer();
         // taskTwoInitializer();
         // taskThreeInitializer();
-        // taskFourInitializer();
+        taskFourInitializer();
 }
 
 
@@ -64,46 +61,32 @@ void takeDelimiter(char delimiter[], int size)
     printf("Enter a delimiter (up to %d characters): ", size);
     fgets(delimiter, size, stdin);
 
-    size_t len = strlen(delimiter);
-    if (len > 0 && delimiter[len - 1] == '\n') 
-    {
-        delimiter[len - 1] = '\0';
-    }
 }
 void tokenizeSentence(char sentence[], char delimiter, char tokens[][11]) 
 {
-    int wordIndex = 0;
-    int charIndex = 0;
+    int w = 0;
+    int c = 0;                       
 
-    for (int i = 0; i < strlen(sentence); i++) 
+    for (int i = 0; i < strlen(sentence); i++)
     {
         if (sentence[i] != delimiter) 
         {
-            tokens[wordIndex][charIndex++] = sentence[i];
-            if (charIndex > 10) {
-                printf("Error: Word length exceeds the maximum length of 10.\n");
+            tokens[w][c++] = sentence[i];
+            if (c > 10) {
+                printf("Error: Word length greater than 10.\n");
                 return;
             }
         } 
         else 
         {
-            tokens[wordIndex++][charIndex] = '\0'; 
-            if (wordIndex > 10) 
+            tokens[w++][c] = '\0'; 
+            if (w > 5) 
             {
-                printf("Error: Number of words exceeds the allowed limit of 5.\n");
+                printf("Error: Number of words exceeds limit of 5.\n");
                 return;
             }
-
-            charIndex = 0;
+            c = 0;
         }
-    }
-
-    tokens[wordIndex][charIndex] = '\0';
-
-    if (wordIndex + 1 > 5) 
-    {
-        printf("Error: Number of words exceeds the allowed limit of 5.\n");
-        return;
     }
 }
 
@@ -157,7 +140,7 @@ int taskTwoInitializer() {
 }
 
 //Question No 3
-
+///To do type validation
 int taskThreeInitializer()
 {
     int age, ageInMonths, ageInHours;
@@ -196,7 +179,7 @@ int taskFourInitializer()
 
 void calculateAge(int hours, int minutes)
 {
-     while (hours < 0 || hours > 24 || minutes < 0 || minutes > 59)
+    while (hours < 0 || hours > 24 || minutes < 0 || minutes > 59)
     {
         printf(" Invalid Format ! Enter the correct time, in a format ( HH : MM ) \n ");
         scanf("%d : %d", &hours, &minutes);

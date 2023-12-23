@@ -34,5 +34,5 @@ int main() {
 
     calculateDigitFrequency(number);
 
-    return 0; // Successfula execution
+    return 0;
 }
